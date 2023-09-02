@@ -1,0 +1,236 @@
+<!doctype html>
+
+<html>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+
+<style>
+:root { --primary-color: #black; --secondary-color: #AED581; --font-color: #black; --bg-color: #EEEEEE; --heading-color: #AED581; }
+
+[data-theme="dark"] { --primary-color: #9A97F3; --secondary-color: #818cab; --font-color: lightgrey; --bg-color: #2B3238; --heading-color: #AED581; }
+
+body { background-color: var(--bg-color); color: var(--font-color); /*other styles*/ ..... } h1 { color: var(--secondary-color); /*other styles*/ ..... } a { color: var(--primary-color); /*other styles*/ ..... }
+
+.theme-switch-wrapper { 
+display: flex; 
+align-items: center;
+ em { 
+ margin-left: 10px;
+  font-size: 1rem; 
+  
+  }
+   }
+    .theme-switch {
+         display: inline-block;
+          height: 34px; position: relative; width: 56px;
+          margin-right:16px
+           } 
+           .theme-switch input { 
+           display:none;
+            }
+             .slider {
+                  background-color: #ccc; bottom: 0;
+                   cursor: pointer;
+                    left: 0;
+                     position: absolute;
+                      right: 0; top: 0; transition: .4s;
+                       } 
+                       .slider:before { 
+                       background-color: #fff; bottom: 4px;
+                        content: "";
+                         height: 26px; 
+                         left: 4px;
+                          position: absolute; transition: .4s;
+                           width: 26px;
+                            } 
+                            input:checked + .slider { 
+                            background-color: #2B3238; 
+                            
+                            } input:checked + .slider:before { 
+                            transform: translateX(26px); 
+                            
+                            } 
+                            .slider.round { border-radius: 34px; } .slider.round:before { border-radius: 50%; }
+                            
+  
+    .dropbtn { background-color: #2B3238; 
+    color: white; 
+    padding: 2px; 
+    font-size: 16px;
+    border: none; 
+    border-radius:45%;
+     
+     } 
+     .dropdown { 
+     position: relative;
+     display: inline-block;
+      
+      } 
+      .dropdown-content { 
+      display: none; 
+      border-radius:8px;
+      position: absolute;
+      background-color: lightgrey;
+      min-width: 200px;
+      z-index: 1;
+          } 
+          .dropdown-content a { 
+          color: black; 
+          padding: 12px 16px; 
+          text-decoration: none; 
+          display: block;
+           } 
+           .dropdown-content a:hover {background-color: white;
+           
+           } 
+           
+.dropdown:hover
+.dropdown-content{      
+           display:block;
+ 
+} 
+                        
+</style>                             
+                            
+</style>
+
+
+
+<title style="color:#AED581">Earth Friendly Ride</title>
+
+
+<div class="dropdown">
+
+ <button1 class="dropbtn">●●●</button>
+ 
+  <div class="dropdown-content"> 
+  
+  <a>Prizes</a>
+  
+  <a href="mailto:earthfriendlyride@gmail.com">Contact Us</a>
+   
+   
+    <a>About Us</a>
+    
+    <a>Share</a>
+    
+    <a>Rate Us</a>
+  
+    <a><div class="theme-switch-wrapper">
+ <label class="theme-switch" for="checkbox"> <input type="checkbox" id="checkbox" /> 
+ <div class="slider round"></div> 
+ </label>Dark Mode</div></a>
+
+    
+    </div>
+  
+  </div> 
+
+</head> 
+
+
+
+<body>
+  
+  <strong> <h1 style="text-align:center;color:#AED581;">
+    Earth Friendly Ride 
+  </h1>
+    <p style="text-align:center;"> </strong> 
+  
+  <marquee behavior="scroll" direction="left"><h5 style="color:#AED581">Providing eco-friendly bus services!</h5></marquee>
+ 
+<img src="logo8_7_102425-1.jpg" alt="Company Logo">
+
+<p style="margin-bottom:50px;margin-top:60px">
+
+Hi there, welcome to Earth Friendly Ride. Are you tired of waiting for your bus or perhaps fuel costs are too much for you, this is the app for you, providing nearby bus locations and games while winning prizes at the end of the month just at a fee of E5 per week, so are you in? Together we can break the barriers of climate change.</p>
+
+  
+  
+  
+  </body>
+
+
+<script>
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]'); function switchTheme(e) { if (e.target.checked) { document.documentElement.setAttribute('data-theme', 'dark'); } else { document.documentElement.setAttribute('data-theme', 'light'); } } toggleSwitch.addEventListener('change', switchTheme, false); 
+</script>
+
+<script>
+function switchTheme(e) { if (e.target.checked) { document.documentElement.setAttribute('data-theme', 'dark'); localStorage.setItem('theme', 'dark'); //add this } else { document.documentElement.setAttribute('data-theme', 'light'); localStorage.setItem('theme', 'light'); //add this } }
+</script>
+
+<script>
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; if (currentTheme) { document.documentElement.setAttribute('data-theme', currentTheme); if (currentTheme === 'dark') { toggleSwitch.checked = true; } }
+</script>
+
+<style>
+
+button{
+    padding:140px 50px;
+    border-radius:8px;
+    background-color:transparent;
+    color:#757575;
+    width:49%;
+    height:150px;
+    font-size:20px;
+    font-style:bold;
+    margin-bottom:6px;
+    
+    
+}  
+
+</style>  
+  
+<div>
+
+
+
+<button>Location</button>
+
+<button>Scanner</button>
+
+</div>
+
+<div>
+
+<button>Payment Method</button>
+
+<button>Leaderboard</button>
+
+</div>
+
+
+</body>  
+  
+  
+ <footer style="margin-top:110px;"> 
+
+
+
+<p style="opacity:60%">Thank you for using our services. We as the Earth Friendly Ride family would like to extend our gratitude.<p>
+ 
+ Rate our app &star;
+&starf;
+&bigstar;
+
+&copy; 
+
+Copyright 2023
+
+
+</footer>  
+  
+  
+  
+  </font>
+  
+<div class="navigation">
+  
+	<a class="button" href="">
+
+  
+  <div class="logout">LogOut</div 
+
+</html>
